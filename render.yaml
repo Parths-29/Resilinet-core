@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: resilinet-backend
+    env: python
+    rootDir: ml_core_/backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn server:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
+      - key: FLASK_ENV
+        value: production

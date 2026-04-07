@@ -1,0 +1,22 @@
+flask>=2.3.0
+flask-cors>=4.0.0
+gunicorn>=21.2.0
+pandas>=2.0.0
+numpy>=1.24.0
+networkx>=3.1
+scikit-learn>=1.3.0
+scipy>=1.11.0
+
+# PyTorch: Install the CPU-only version for fastest local setup.
+# If you have an NVIDIA GPU, visit https://pytorch.org/get-started/ for CUDA builds.
+# CPU install command (run ONCE, separately):
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+#
+# torch-geometric (GATv2 / Graph Neural Networks):
+# After installing torch, run:
+#   pip install torch-geometric
+#   pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-2.0.0+cpu.html
+#
+# NOTE: If torch/torch-geometric install fails, the server still works!
+# It will run in "Logic-Only Mode" (Nash + Graph algorithms, no GATv2 ML).
+# The simulation is fully functional without the ML engine.
