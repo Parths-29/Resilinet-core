@@ -438,4 +438,4 @@ if __name__ == '__main__':
     print(f"\n🚀 ResiliNet Backend running on http://localhost:{port}")
     print(f"   ML Engine: {'✅ Active' if ML_ENABLED else '⚠️  Disabled (install torch)'}")
     print(f"   Frontend:  http://localhost:5173\n")
-    app.run(port=port, debug=True)
+    app.run(host="0.0.0.0", port=port, debug=False)
