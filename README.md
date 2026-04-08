@@ -3,6 +3,7 @@
 ## Executive Summary
 
 ResiliNet is a high-performance, full-stack financial simulation engine designed to model, predict, and mitigate systemic risk within complex interbank lending networks. 
+Live link - https://resilinet-core-4ays0xtz4-parths-projects-8b1cb9fa.vercel.app/
 
 Moving beyond traditional, static financial modeling, ResiliNet introduces a live, interactive Neural Lattice. It simulates how localized financial shocks—such as a bank losing assets during market panic—propagate through a network, potentially triggering a cascading economic collapse. By combining Graph Theory, Game Theory, and Machine Learning (GATv2), ResiliNet provides a real-time stress-testing environment with an automated Central Counterparty (CCP) clearing system that actively intervenes to penalize risky behavior.
 
