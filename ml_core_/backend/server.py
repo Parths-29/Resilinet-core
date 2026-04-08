@@ -33,14 +33,8 @@ except (ImportError, Exception) as e:
 
 app = Flask(__name__)
 
-# Robust CORS: explicit origins for dev and any future deployment
-ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://localhost:3000",
-    "http://127.0.0.1:5173",
-    os.environ.get("FRONTEND_URL", ""),  # set via env for production
-]
-CORS(app, resources={r"/api/*": {"origins": [o for o in ALLOWED_ORIGINS if o]}})
+# Relaxed CORS for Vercel dynamic preview URLs and portfolio demo
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 # --- THRESHOLDS ---
 BASEL_REQUIREMENT = 12.0
